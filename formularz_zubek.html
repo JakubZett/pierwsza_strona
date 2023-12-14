@@ -10,9 +10,68 @@
 			<!-- Autor Ja Kubus --> 
 			<META name="Author" content = "Jakub Zubek" />
 			<meta name="Description" content = "//Strona przeznaczona do testowania strony//" />
+			<link rel="stylesheet" href="styles_formularz.css">
 		</head>
-	<body>
-        tutaj będzie formularz<br>
-        <a href="index.html">Wróć</a>
+	<body style="background-color:#78ACFF;">
+        <h1 align="center">OPINIA KLIENTA</h1>
+		<hr size="3" width="100%" color="blue">
+		<form action="">
+			<div id="content">
+				<div id="left">
+					<label for="Imie">Imie:</label>
+					<input type="text" name="Imie" id="Imie" /><br />
+					<label for="Nazwisko">Nazwisko:</label>
+					<input type="text" name="Nazwisko" id="Nazwisko" /><br />
+					<label for="telefon">Numer telefonu:</label>
+					<input type="tel" name="telefon" id="telefon" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" /><br />
+					<label for="adres">Adres:</label>
+					<input type="text" name="adres" id="adres"/><br />
+					
+					<h2>
+						Jaka jest forma płatności:
+						<select>
+							<option value="Karta">Karta</option>
+							<option value="Przelew">Przelew</option>
+							<option value="Gotowka">Gotówka</option>
+							<option value="Blik">Blik</option>
+						</select>
+					</h2>	
+					<h2>Forma kontaktu:</h2>
+					<input type="checkbox" id="adres_email" name="Adres_email"/>
+					<label for="Adres_email">Adres email</label><br/>
+
+					<input type="checkbox" id="sms" name="Sms"/>
+					<label for="Sms">Sms</label><br/>
+
+					<input type="checkbox" id="inne" name="Inne"/>
+					<label for="Inne">Inne <input type="text" name="Inne_dos" id="Inne_dos"/></label><br/>
+				</div>
+				<div id="right">
+					<h2>Wybierz skale zadowolenia z produktu</h2>
+					<div class="zdanwolenie">
+						<span><input type="radio" name="gwiazdki" id="5gwiazek"/>
+						<label for="5gwiazek">5 Gwiazdek</label><br/></span>
+
+						<span><input type="radio" name="gwiazdki" id="4gwiazek"/>
+						<label for="4gwiazek">4 Gwiazdek</label><br/></span>
+
+						<span><input type="radio" name="gwiazdki" id="3gwiazek"/>
+						<label for="3gwiazek">3 Gwiazdek</label><br/></span>
+
+						<span><input type="radio" name="gwiazdki" id="2gwiazek"/>
+						<label for="2gwiazek">2 Gwiazdek</label><br/></span>
+
+						<span><input type="radio" name="gwiazdki" id="1gwiazek"/>
+						<label for="1gwiazek">1 Gwiazdek</label><br/></span>
+					</div>
+					<h2>Szczególnie w naszej usłudze podobało ci się?:</h2>
+					<textarea id="big"></textarea><br/><br/>
+
+					<input type="checkbox" id="zgody" name="zgody" required/>
+					<label for="zgody">Zgodu i apkceptacje</label><br/>					
+				</div>
+			</div>
+			<center><button type="submit">Wyślij</button> <button type="reset">Reset</button></center>
+    	</form>
 	</body>
 </html>
