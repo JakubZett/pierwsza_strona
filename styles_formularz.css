@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+form {
+    margin-left: 10vw;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 20px;
+}
+
+input[text] {
+    background-color: #D9D9D9;
+    border: 2px solid black;
+    width: 200px;
+    height: 30px;
+}
+
+input[text]:first-child {
+    margin-left: 48px;
+}
+
+input[text]:nth-child(2) {
+    margin-left: 0px;
+}
+
+input[text]:last-child {
+    margin-left: 38px;
+}
+
+.zdanwolenie {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 500px;
+}
+
+#big {
+    width: 545px;
+}
